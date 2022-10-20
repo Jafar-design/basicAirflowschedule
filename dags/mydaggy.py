@@ -15,6 +15,7 @@ def writeToFile():
     def writeInstdeTxt():
         with open('output/wr1.txt', mode='a') as file:
             file.write(now.strftime("%m/%d/%Y, %H:%M:%S") + '\n')
+    writeInsideTxt = writeInsideTxt()
             
 
 writeToFile = writeToFile()
