@@ -12,8 +12,10 @@ now=datetime.now()
 def writeToFile():
     
     @task
-    def writeInstdeTxt():
-        with open('output/wr1.txt', mode='a') as file:
+    def writeInsideTxt():
+
+        # This code opens a new file if it doesn't exist before, and appends current timetsamp
+        with open('wr1.txt', mode='a') as file:
             file.write(now.strftime("%m/%d/%Y, %H:%M:%S") + '\n')
     writeInsideTxt = writeInsideTxt()
             
