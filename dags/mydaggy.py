@@ -1,6 +1,6 @@
 
 from pandas import DataFrame
-import connection
+# import connection
 from datetime import datetime
 from airflow.decorators import task, dag
 # from include import gtb_summary
